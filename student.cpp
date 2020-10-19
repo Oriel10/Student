@@ -57,3 +57,11 @@ void Student::printStudentData() const{
         "student gender: "<<gender<<endl<<    
         "student average: "<<average;
 }
+
+int Student::getAverage() const{
+    int average = 0;
+    for(pair<string,int> p : grades){
+        average += p.second;
+    }
+    return average;
+}
