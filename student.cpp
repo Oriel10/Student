@@ -4,6 +4,7 @@
 #include <iostream>
 using namespace std;
 
+
 void Student::addGrade(std::string grade_name,int grade){
     assert(grade_name != "");
     if(grade < 0 || grade > 100){
@@ -51,4 +52,12 @@ void Student::printStudentData() const{
         "student_faculty: "<<student_faculty<<endl<<
         "student gender: "<<gender<<endl<<    
         "student average: "<<average;
+}
+
+int Student::getAverage() const{
+    int average = 0;
+    for(pair<string,int> p : grades){
+        average += p.second;
+    }
+    return average;
 }
