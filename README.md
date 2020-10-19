@@ -1,2 +1,2 @@
-# Students
-class for students
+# Student
+class for a student
