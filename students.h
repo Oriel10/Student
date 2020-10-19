@@ -23,6 +23,7 @@ public:
     virtual ~Student() = default;
     void addGrade(std::string grade_name,int grade);
     void setGrade(std::string grade_name,int grade);
+    int getAverage() const;
     void deleteGrade(std::string grade_name);
     int getGrade(std::string grade_name) const;
     void printStudentData() const;
