@@ -36,6 +36,7 @@ public:
             return "grade doesn't exist";
         }
     };
+    void gurtTestFunc() const;
 };
 
 #endif

@@ -12,6 +12,10 @@ void Student::addGrade(std::string grade_name,int grade){
     grades.insert(pair<string,int>(grade_name,grade));
 }
 
+void Student::gurtTestFunc(){
+    cout << "This is gurt test function" << endl;
+}
+
 void Student::setGrade(std::string grade_name,int grade){
     assert(grade_name != "");
     if(grade < 0 || grade > 100){
